@@ -1,0 +1,27 @@
+* {
+	text-decoration: none;
+	list-style: none;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+.nav-item {
+	width: 22%;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	background: yellow;
+	padding: 0 2%;
+}
+
+#eat-menu, #make-menu, #play-menu, #code-menu {
+	background: hotpink;
+	width: 20%;
+}
+
+.hide {
+	display: none;
+}
