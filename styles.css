@@ -1,5 +1,6 @@
 * {
 	text-decoration: none;
+	list-style-type: none;
 	list-style: none;
 	font-family: sans-serif;
 }
@@ -12,9 +13,18 @@ body {
 	width: 22%;
 	text-align: center;
 	cursor: pointer;
-	float: left;
+	display: inline-block;
 	background: yellow;
-	padding: 0 2%;
+	padding: 15px;
+	position: relative;
+}
+
+.nav-item li {
+	display: inline-block;
+}
+
+.nav-item li:hover {
+	background: blue;
 }
 
 #eat-menu, #make-menu, #play-menu, #code-menu {
@@ -22,6 +32,20 @@ body {
 	width: 20%;
 }
 
-.hide {
+.nav-item ul {
+	position: absolute;
+	top: 45px;
+	min-width: 200px;
 	display: none;
+}
+
+ul ul li {
+	width: 100%;
+	text-align: center;
+	padding: 0;
+}
+
+.nav-item:hover ul {
+	display: block;
+	background: purple;
 }
