@@ -1,51 +1,73 @@
+:root {
+  --darkGrey: #333;
+  --pink: #d81e5b;
+  --yellow: #ffbd26;
+  --white: #fff;
+  --lightGrey: #bfbfbf;
+
+  --titleFont: 'Homemade Apple', cursive;
+  --bodyFont: 'Montserrat', sans-serif;
+}
+
+
 * {
 	text-decoration: none;
 	list-style-type: none;
 	list-style: none;
 	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-body {
-	margin: 0;
+nav {
+	width: 100%;
 }
+
+.nav-menu {
+	display: flex;
+	justify-content: center;
+}
+
 
 .nav-item {
+	font-family: var(--bodyFont);
 	width: 22%;
 	text-align: center;
 	cursor: pointer;
 	display: inline-block;
-	background: yellow;
-	padding: 15px;
+	color: var(--darkGrey);
+	padding: 2% 1.2%;
 	position: relative;
 }
 
 .nav-item li {
 	display: inline-block;
+	color: var(--white);
 }
 
 .nav-item li:hover {
-	background: blue;
-}
-
-#eat-menu, #make-menu, #play-menu, #code-menu {
-	background: hotpink;
-	width: 20%;
+	background: var(--yellow);
+	color: var(--white);
 }
 
 .nav-item ul {
 	position: absolute;
 	top: 45px;
-	min-width: 200px;
+	width: 100%;
 	display: none;
 }
 
 ul ul li {
 	width: 100%;
 	text-align: center;
-	padding: 0;
+	padding: 2% 0;
+}
+.nav-item ul li a {
+	color: white;
 }
 
 .nav-item:hover ul {
 	display: block;
-	background: purple;
+	background: var(--pink);
+	color: var(--white);
 }
