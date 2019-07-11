@@ -71,3 +71,15 @@ ul ul li {
 	background: var(--pink);
 	color: var(--white);
 }
+
+main {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 20px auto;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+}
